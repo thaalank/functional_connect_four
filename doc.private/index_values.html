@@ -1,0 +1,777 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div></div></td></tr>
+<tr><td><a href="Draw.html#VAL(~.)">(~.)</a> [<a href="Draw.html">Draw</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>A</div></td></tr>
+<tr><td><a href="Settings.html#VALadvance_color">advance_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_color sel</code> advances the color of the selection
+    to the next color.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALadvance_style">advance_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_style pi</code> advances the style of <code class="code">pi</code> to the
+    next style</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>B</div></td></tr>
+<tr><td><a href="Settings.html#VALbackground_color">background_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">background_color</code> is a reference to the color of the
+    background</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Human.Human.html#VALboard_regions">board_regions</a> [<a href="Human.Human.html">Human.Human</a>]</td>
+<td><div class="info">
+<p><code class="code">board_regions (x,y)</code> is a list of regions corresponding to
+      0-indexed points in a board of <code class="code">x</code> columns and <code class="code">y</code> rows</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALborder">border</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">border r c</code> is the border for each piece style</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Settings.html#VALchange_setting">change_setting</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">change_setting f s</code> applies <code class="code">f</code> to setting <code class="code">s</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALcheck_horiz_consecs">check_horiz_consecs</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">check_horiz_consecs token_lst</code> is the score of <code class="code">token_lst</code> which represents
+    a row of the board.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcheck_rect">check_rect</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">check_rect lst</code> is a helper for diag4.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALcheck_vert_consecs">check_vert_consecs</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">check_vert_consecs token_lst</code> is the score of <code class="code">token_lst</code> which represents
+    a column of the board.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcheck_win_condition">check_win_condition</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">win_condition lst token</code> is true if the current game <code class="code">lst</code> is a win for 
+    one of the two players using <code class="code">token</code> and false otherwise.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALcirc">circ</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">circ ~offset:(x_off, y_off) ~alt:alter factor r c</code> is a circle
+    at <code class="code">(r.x, r.y)</code> offset by <code class="code">(x_off, y_off)</code> relative to 40% of the region's
+    width and height.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALcircle_deep">circle_deep</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">circle_deep r c</code> is a circle with the deep circle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALcircle_flat">circle_flat</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">circle_flat r c</code> is a circle with the flat circle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Input.html#VALclick_or_quit">click_or_quit</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">click_or_quit status func loop </code> quits if the user hits escape,
+    runs <code class="code">func status</code> if the user has clicked and released their mouse 
+    and runs <code class="code">loop ()</code> otherwise</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcol_to_list">col_to_list</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">col_to_list acc col</code> is a token list representation of <code class="code">col</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALcol_to_list_helper">col_to_list_helper</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">col_to_list_helper acc col</code> is a token list representation of <code class="code">col</code> but 
+    reversed.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALconsec4">consec4</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">consec4 tlist token</code> is whether the <code class="code">tlist</code> has four consecutive <code class="code">token</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>D</div></td></tr>
+<tr><td><a href="Settings.html#VALdevance_color">devance_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">devance_color sel</code> retreats the color of the selection
+    to the previous color.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALdevance_style">devance_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">devance_color sel</code> retreats the style of <code class="code">pi</code>
+    to the previous style</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdiag4">diag4</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">diag4 lst token</code> is whether the player using <code class="code">token</code> in <code class="code">lst</code> has met the 
+    diagonal winning condition.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Play.html#VALdifficulty">difficulty</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="Screen.html#VALdraw_screen">draw_screen</a> [<a href="Screen.html">Screen</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_screen scr</code> colors the background <code class="code">scr.background</code> and
+    draws each shape in <code class="code">scr.shapes</code> in order</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Screen.html#VALdraw_shape">draw_shape</a> [<a href="Screen.html">Screen</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_shape sh</code> draws shape <code class="code">sh</code>
+    in the case of <code class="code">Comp lst</code>, it draws each element in <code class="code">lst</code> 
+    from first to last</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdrop">drop</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">drop token c_i t</code> is the state after dropping <code class="code">token</code> at <code class="code">col_i</code> 
+    in state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdrop_in_col">drop_in_col</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_in_col col token c_i acc</code> is <code class="code">col</code> with <code class="code">token</code> dropped into it.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALdrop_token">drop_token</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_token t col_i token</code> is the state after dropping <code class="code">token</code> at <code class="code">col_i</code> 
+    in state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdrop_token">drop_token</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">drop_token token c_i grid acc n</code> is the new grid with <code class="code">token</code> dropped at
+    <code class="code">c_i</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>F</div></td></tr>
+<tr><td><a href="MinMax.html#VALfind_killer_moves">find_killer_moves</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">find_killer_moves max_min token depth t pos_moves pos_moves_and_states</code> 
+    is a helper function for <code class="code">min_max</code> which is a tuple of the chosen 
+    index of column and score if the token is placed at the index of column.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALfind_possible_moves">find_possible_moves</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">get_possible_moves t</code> is a list of all the possible col_i that a token
+    can legally be dropped into in <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALfive_plus">five_plus</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">five_plus r c</code> is a circle with the 5 circle plus style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALfive_x">five_x</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">five_x r c</code> is a circle with the 5 circle X style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALflip_token">flip_token</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">flip_token token</code> is yellow if <code class="code">token</code> is red and is red if <code class="code">token</code> is 
+    yellow.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALfour_plus">four_plus</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">four_plus r c</code> is a circle with the 4 circle plus style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALfour_x">four_x</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">four_x r c</code> is a circle with the 4 circle X style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Play.html#VALgame">game</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="Settings.html#VALget_alt_color">get_alt_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_alt_color sel</code> gets the alternative 
+    <code class="code">Graphics</code> color of the selection</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_board">get_board</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_board t</code> is the board at state <code class="code">t</code> represented as a list of token 
+    lists.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_col">get_col</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_col c_i cols</code> is the column at index <code class="code">c_i</code> in <code class="code">cols</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_color">get_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_color sel</code> gets the <code class="code">Graphics</code> color of the selection</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_desc">get_desc</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_desc pi</code> is a description of the style of <code class="code">pi</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_idx">get_idx</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_idx col r_i count</code> gets the desired index of the <code class="code">col</code> by matching 
+    <code class="code">r_i</code> and <code class="code">count</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALget_mini_max_c_i">get_mini_max_c_i</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.html#VALget_possible_moves">get_possible_moves</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_possible_moves t</code> is a list of all the possible col_i that a token
+    can legally be dropped into in <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_possible_moves_helper">get_possible_moves_helper</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_possible_moves_helper board acc n</code> is a list of all the possible col_i
+    that a token can legally be dropped into <code class="code">board</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_shape">get_shape</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_shape pi r</code> is the <code class="code">Screen</code> shape corresponding to
+    <code class="code">pi</code>, with the style and color of <code class="code">pi</code>, within <code class="code">r</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_token">get_token</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_token c_i r_i t</code> is the token in <code class="code">t</code> at column <code class="code">c_i</code> and row <code class="code">r_i</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_token_row">get_token_row</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_token_row r_i col</code> is the token at index <code class="code">r_i</code> in <code class="code">col</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_turn">get_turn</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_turn t</code> is the turn at state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_winner">get_winner</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_winner grid token</code> is the state associated with the proper winning turn
+    based on <code class="code">token</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALgrid_to_list">grid_to_list</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">grid_to_list acc grid</code> is a token list list representation of grid.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALgrid_to_list_helper">grid_to_list_helper</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">grid_to_list_helper acc grid</code> is a token list list representation of grid
+    but reversed.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>H</div></td></tr>
+<tr><td><a href="MinMax.html#VALheight">height</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.html#VALhori4">hori4</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">hori4 lst token</code> is whether <code class="code">token</code> satisfies the horizontal winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Authors.html#VALhours_worked">hours_worked</a> [<a href="Authors.html">Authors</a>]</td>
+<td><div class="info">
+<p><code class="code">hours_worked</code> is a list of the number of hours each team member worked on 
+    this assignment.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="Play.html#VALinit">init</a> [<a href="Play.html">Play</a>]</td>
+<td><div class="info">
+<p><code class="code">init ()</code> opens the connect 4 window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Draw.html#VALink">ink</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">ink pen</code> sets the drawing color to <code class="code">pen.color</code> and the
+    line width to <code class="code">pen.width</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALis_col_full">is_col_full</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">is_col_full col</code> is true if the column <code class="code">col</code> is full.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALis_grid_full">is_grid_full</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">is_grid_full lst</code> is true if the grid represented by <code class="code">lst</code> is full
+    of tokens.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>L</div></td></tr>
+<tr><td><a href="MinMax.html#VALloop_cols">loop_cols</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">loop_cols board acc</code> is the score of each column in <code class="code">board</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALloop_trans_cols">loop_trans_cols</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">loop_trans_cols board acc</code> is the score of each row in <code class="code">board</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALlsts_to_tuple_lst">lsts_to_tuple_lst</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">lsts_to_tuple_lst lst1 lst2</code> is <code class="code">lst1</code> and <code class="code">lst2</code> combined into a list
+    of 2-element tuples.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="Play.html#VALmain_menu">main_menu</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.html#VALmake_empty_col">make_empty_col</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">make_empty_col r</code> is an Empty token list with <code class="code">r</code> Empty tokens, which 
+    represents one empty column.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALmake_empty_grid">make_empty_grid</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">make_empty_grid r c</code> is an Empty grid with <code class="code">r</code> rows and <code class="code">c</code> columns.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALmake_start_state">make_start_state</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">make_start_state r c</code> is the State.t with a board of <code class="code">r</code> rows, <code class="code">c</code> columns,
+    and with YellowTurn as the first turn .</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALmin_max">min_max</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">min_max max_min token depth t</code> is a tuple of the chosen 
+    index of column and score if the token is placed at the index of column.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove">move</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move game</code> is the game state after the current player has made a move</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Human.Human.html#VALmove">move</a> [<a href="Human.Human.html">Human.Human</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>N</div></td></tr>
+<tr><td><a href="State.html#VALnew_col">new_col</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">new_col token c_i grid</code> is the new column at <code class="code">c_i</code> in grid with <code class="code">token</code> 
+    dropped into it.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALnext_color">next_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">next_color color</code> is the next color in the sequence of colors</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALnext_style">next_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">next_style sty</code> is the next style in the sequence
+    of styles</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALnext_turn">next_turn</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">next_turn turn</code> is the next turn if the current turn is <code class="code">turn</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>P</div></td></tr>
+<tr><td><a href="MinMax.html#VALperform_moves">perform_moves</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">perform_moves t possible_moves token</code> is a list of tuples where the first
+    element of the tuple is the col_i the token was dropped into, and the second
+    element of the tuple is the state after the token is dropped into that 
+    col_i.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALprev_color">prev_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">prev_color color</code> is the previous color in the sequence of colors</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALprev_style">prev_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">prev_style sty</code> is the previous style in the sequence
+    of styles</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>R</div></td></tr>
+<tr><td><a href="Utils.html#VALread_lines">read_lines</a> [<a href="Utils.html">Utils</a>]</td>
+<td></td></tr>
+<tr><td><a href="Settings.html#VALred_color">red_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">red_color</code> is a reference to the color of the
+    red pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALred_style">red_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">red_style</code> is a reference to the style of red pieces</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Play.html#VALred_win">red_win</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="MinMax.html#VALred_wins">red_wins</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+<tr><td><a href="Draw.html#VALrelative_circle">relative_circle</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_circle region pen ?filled</code> draws using <code class="code">pen</code> as large of a circle 
+    as possible within <code class="code">region</code> at <code class="code">(region.x, region.y)</code>, and fills it
+    if <code class="code">filled</code> is true</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Draw.html#VALrelative_rect">relative_rect</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_rect region pen</code> is the rectangle formed from <code class="code">region</code>
+    drawn with <code class="code">pen</code>, and fills it if <code class="code">filled</code> is true</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Draw.html#VALrelative_text">relative_text</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_text region pen str</code> draws <code class="code">str</code> at <code class="code">(region.x, region.y)</code> 
+    using <code class="code">pen</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Window.html#VALrelativize">relativize</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">relativize (x,y)</code> is the corresponding relative point
+    corresponding to <code class="code">(x,y)</code>, relative to the current window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALreset_color">reset_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">reset_color sel</code> resets the color of the selection.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALreset_style">reset_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">reset_style pi</code> resets the style of <code class="code">pi</code> to CIRCLE</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Input.html#VALrun_callbacks">run_callbacks</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">run_callbacks cc pt</code> runs the first callback of 
+    <code class="code">cc</code> that the relative point <code class="code">pt</code> lies in 
+    and runs <code class="code">f ()</code> if <code class="code">pt</code> doesn't lie in any region in <code class="code">cc</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>S</div></td></tr>
+<tr><td><a href="MinMax.html#VALscore_state">score_state</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">score_state t</code> is the score of a given state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALset_setting">set_setting</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">change_setting c s</code> sets setting <code class="code">s</code> to value <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALseven_flat">seven_flat</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">seven_flat r c</code> is a circle with the 7 circle flat hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALseven_pointy">seven_pointy</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">seven_pointy r c</code> is a circle with the 7 circle pointy hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALsix_flat">six_flat</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">six_flat r c</code> is a circle with the 6 circle flat hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALsix_pointy">six_pointy</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">six_pointy r c</code> is a circle with the 6 circle pointy hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALsmile">smile</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">smile r c</code> is a circle with the smile style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALsquare4x4">square4x4</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">square4x4 lst token</code> is whether <code class="code">token</code> satisfies the winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALsquare_larger">square_larger</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">square larger lst</code> is a helper for diag4.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Play.html#VALstatic_screen">static_screen</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="Draw.html#VALtext_region">text_region</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">text_region region lst</code> is the region occupied by
+    <code class="code">lst</code> such that the height of the region is the total
+    height of each string in <code class="code">lst</code> and the width is
+    the maximum width among the strings in <code class="code">lst</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Play.html#VALtheme_select">theme_select</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="Play.html#VALtie">tie</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="Play.html#VALtitle_screen">title_screen</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="Settings.html#VALto_alt_color">to_alt_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">to_alt_color color</code> is the <code class="code">Graphics</code> color of <code class="code">color</code>,
+    except slightly differently colored.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALto_color">to_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">to_color color</code> is the <code class="code">Graphics</code> color of <code class="code">color</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALto_desc">to_desc</a> [<a href="Settings.html">Settings</a>]</td>
+<td></td></tr>
+<tr><td><a href="Settings.html#VALto_ref">to_ref</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">to_ref sel</code> is the reference <code class="code">sel</code> corresponds to</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALto_ref'">to_ref'</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">to_ref' pi</code> is the reference corresponding to piece <code class="code">pi</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALto_shape">to_shape</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">to_shape c sty r</code> is a shape with color <code class="code">c</code>, style <code class="code">sty</code>,
+    occupying region <code class="code">r</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALtranspose">transpose</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td><div class="info">
+<p><code class="code">transpose board</code> is <code class="code">board</code> transposed.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALtriangle_down">triangle_down</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">triangle_down r c</code> is a circle with the downwards triangle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALtriangle_up">triangle_up</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">triangle_up r c</code> is a circle with the upwards triangle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>V</div></td></tr>
+<tr><td><a href="State.html#VALvert4">vert4</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">vert4 lst token</code> is whether <code class="code">token</code> satisfies the vertical winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>W</div></td></tr>
+<tr><td><a href="Input.html#VALwait_until_up">wait_until_up</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">wait_until_up</code> waits until the user releases
+    the mouse button</p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALwidth">width</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+<tr><td><a href="Window.html#VALwindow_dim">window_dim</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">window_dim ()</code> are the dimensions of the window <code class="code">(width, height)</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Window.html#VALwithin">within</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">within region (x,y)</code> is whether the relative location <code class="code">(x,y)</code> 
+    is in or on the border of <code class="code">region</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>Y</div></td></tr>
+<tr><td><a href="Settings.html#VALyellow_color">yellow_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">yellow_color</code> is a reference to the color of the
+    yellow pieces.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALyellow_style">yellow_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">yellow_style</code> is a reference to the style of yellow pieces</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Play.html#VALyellow_win">yellow_win</a> [<a href="Play.html">Play</a>]</td>
+<td></td></tr>
+<tr><td><a href="MinMax.html#VALyellow_wins">yellow_wins</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+</table>
+</body>
+</html>

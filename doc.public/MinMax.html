@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Input.html">
+<link rel="next" href="Player.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>MinMax</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Input.html" title="Input">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Player.html" title="Player">Next</a>
+</div>
+<h1>Module <a href="type_MinMax.html">MinMax</a></h1>
+
+<pre><span id="MODULEMinMax"><span class="keyword">module</span> MinMax</span>: <code class="code">sig</code> <a href="MinMax.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">get_min_max_c_i max_min token depth t</code> is the index of the column 
+    that the min_max algorithm chooses to place the token into where <code class="code">max_min</code>
+    indicates whether the algorithm is maximizing or minimizing the score, 
+    <code class="code">token</code> indicates which token should be dropped at the column index, <code class="code">depth</code>
+    indicates the depth of the algorithm, and <code class="code">t</code> indicates at which state the
+    token should be dropped. Returns a random column index if the algorithm does
+    not return a move.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><span id="VALget_mini_max_c_i"><span class="keyword">val</span> get_mini_max_c_i</span> : <code class="type">bool -> <a href="State.html#TYPEtoken">State.token</a> -> int -> <a href="State.html#TYPEt">State.t</a> -> int</code></pre></body></html>

@@ -1,0 +1,253 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Index of values</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Index of values</h1>
+<table>
+<tr><td align="left"><div>A</div></td></tr>
+<tr><td><a href="Settings.html#VALadvance_color">advance_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_color sel</code> advances the color of the selection
+    to the next color.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALadvance_style">advance_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">advance_style pi</code> advances the style of <code class="code">pi</code> to the
+    next style</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>C</div></td></tr>
+<tr><td><a href="Input.html#VALclick_or_quit">click_or_quit</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">click_or_quit status func loop </code> quits if the user hits escape,
+    runs <code class="code">func status</code> if the user has clicked and released their mouse 
+    and runs <code class="code">loop ()</code> otherwise</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>D</div></td></tr>
+<tr><td><a href="Settings.html#VALdevance_color">devance_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">devance_color sel</code> retreats the color of the selection
+    to the previous color.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALdevance_style">devance_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">devance_color sel</code> retreats the style of <code class="code">pi</code>
+    to the previous style</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Screen.html#VALdraw_screen">draw_screen</a> [<a href="Screen.html">Screen</a>]</td>
+<td><div class="info">
+<p><code class="code">draw_screen scr</code> colors the background <code class="code">scr.background</code> and
+    draws each shape in <code class="code">scr.shapes</code> in order</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALdrop">drop</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">drop token c_i t</code> is the state after dropping <code class="code">token</code> at <code class="code">col_i</code> 
+    in state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>G</div></td></tr>
+<tr><td><a href="Settings.html#VALget_alt_color">get_alt_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_alt_color sel</code> gets the alternative 
+    <code class="code">Graphics</code> color of the selection</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_board">get_board</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_board t</code> is the board at state <code class="code">t</code> represented as a list of token 
+    lists.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_color">get_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_color sel</code> gets the <code class="code">Graphics</code> color of the selection</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_desc">get_desc</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_desc pi</code> is a description of the style of <code class="code">pi</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="MinMax.html#VALget_mini_max_c_i">get_mini_max_c_i</a> [<a href="MinMax.html">MinMax</a>]</td>
+<td></td></tr>
+<tr><td><a href="State.html#VALget_possible_moves">get_possible_moves</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_possible_moves t</code> is a list of all the possible col_i that a token
+    can legally be dropped into in <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALget_shape">get_shape</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">get_shape pi r</code> is the <code class="code">Screen</code> shape corresponding to
+    <code class="code">pi</code>, with the style and color of <code class="code">pi</code>, within <code class="code">r</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_token">get_token</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_token c_i r_i t</code> is the token in <code class="code">t</code> at column <code class="code">c_i</code> and row <code class="code">r_i</code>.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="State.html#VALget_turn">get_turn</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">get_turn t</code> is the turn at state <code class="code">t</code>.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>H</div></td></tr>
+<tr><td><a href="Authors.html#VALhours_worked">hours_worked</a> [<a href="Authors.html">Authors</a>]</td>
+<td><div class="info">
+<p><code class="code">hours_worked</code> is a list of the number of hours each team member worked on 
+    this assignment.</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>I</div></td></tr>
+<tr><td><a href="Draw.html#VALink">ink</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">ink pen</code> sets the drawing color to <code class="code">pen.color</code> and the
+    line width to <code class="code">pen.width</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>M</div></td></tr>
+<tr><td><a href="State.html#VALmake_start_state">make_start_state</a> [<a href="State.html">State</a>]</td>
+<td><div class="info">
+<p><code class="code">make_start_state r c</code> is the State.t with a board of <code class="code">r</code> rows, <code class="code">c</code> columns,
+    and with YellowTurn as the first turn .</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Player.Player.html#VALmove">move</a> [<a href="Player.Player.html">Player.Player</a>]</td>
+<td><div class="info">
+<p><code class="code">move game</code> is the game state after the current player has made a move</p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>R</div></td></tr>
+<tr><td><a href="Utils.html#VALread_lines">read_lines</a> [<a href="Utils.html">Utils</a>]</td>
+<td></td></tr>
+<tr><td><a href="Draw.html#VALrelative_circle">relative_circle</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_circle region pen ?filled</code> draws using <code class="code">pen</code> as large of a circle 
+    as possible within <code class="code">region</code> at <code class="code">(region.x, region.y)</code>, and fills it
+    if <code class="code">filled</code> is true</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Draw.html#VALrelative_rect">relative_rect</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_rect region pen</code> is the rectangle formed from <code class="code">region</code>
+    drawn with <code class="code">pen</code>, and fills it if <code class="code">filled</code> is true</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Draw.html#VALrelative_text">relative_text</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">relative_text region pen str</code> draws <code class="code">str</code> at <code class="code">(region.x, region.y)</code> 
+    using <code class="code">pen</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Window.html#VALrelativize">relativize</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">relativize (x,y)</code> is the corresponding relative point
+    corresponding to <code class="code">(x,y)</code>, relative to the current window</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALreset_color">reset_color</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">reset_color sel</code> resets the color of the selection.</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Settings.html#VALreset_style">reset_style</a> [<a href="Settings.html">Settings</a>]</td>
+<td><div class="info">
+<p><code class="code">reset_style pi</code> resets the style of <code class="code">pi</code> to CIRCLE</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Input.html#VALrun_callbacks">run_callbacks</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">run_callbacks cc pt</code> runs the first callback of 
+    <code class="code">cc</code> that the relative point <code class="code">pt</code> lies in 
+    and runs <code class="code">f ()</code> if <code class="code">pt</code> doesn't lie in any region in <code class="code">cc</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>T</div></td></tr>
+<tr><td><a href="Draw.html#VALtext_region">text_region</a> [<a href="Draw.html">Draw</a>]</td>
+<td><div class="info">
+<p><code class="code">text_region region lst</code> is the region occupied by
+    <code class="code">lst</code> such that the height of the region is the total
+    height of each string in <code class="code">lst</code> and the width is
+    the maximum width among the strings in <code class="code">lst</code></p>
+
+</div>
+</td></tr>
+<tr><td align="left"><div>W</div></td></tr>
+<tr><td><a href="Input.html#VALwait_until_up">wait_until_up</a> [<a href="Input.html">Input</a>]</td>
+<td><div class="info">
+<p><code class="code">wait_until_up</code> waits until the user releases
+    the mouse button</p>
+
+</div>
+</td></tr>
+<tr><td><a href="Window.html#VALwindow_dim">window_dim</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">window_dim ()</code> are the dimensions of the window <code class="code">(width, height)</code></p>
+
+</div>
+</td></tr>
+<tr><td><a href="Window.html#VALwithin">within</a> [<a href="Window.html">Window</a>]</td>
+<td><div class="info">
+<p><code class="code">within region (x,y)</code> is whether the relative location <code class="code">(x,y)</code> 
+    is in or on the border of <code class="code">region</code></p>
+
+</div>
+</td></tr>
+</table>
+</body>
+</html>

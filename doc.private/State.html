@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="next" href="Play.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>State</title>
+</head>
+<body>
+<div class="navbar">&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Play.html" title="Play">Next</a>
+</div>
+<h1>Module <a href="type_State.html">State</a></h1>
+
+<pre><span id="MODULEState"><span class="keyword">module</span> State</span>: <code class="code">sig</code> <a href="State.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p>The representation type of a token.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEtoken"><span class="keyword">type</span> <code class="type"></code>token</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtoken.Yellow"><span class="constructor">Yellow</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtoken.Red"><span class="constructor">Red</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTtoken.Empty"><span class="constructor">Empty</span></span></code></td>
+
+</tr></table>
+
+
+
+<pre><span id="TYPEcol"><span class="keyword">type</span> <code class="type"></code>col</span> = <code class="type"><a href="State.html#TYPEtoken">token</a> list</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract representation type of a column.</p>
+</div>
+</div>
+
+
+<pre><code><span id="TYPEturn"><span class="keyword">type</span> <code class="type"></code>turn</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTturn.YellowTurn"><span class="constructor">YellowTurn</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTturn.RedTurn"><span class="constructor">RedTurn</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTturn.RedWins"><span class="constructor">RedWins</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTturn.YellowWins"><span class="constructor">YellowWins</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTturn.Tie"><span class="constructor">Tie</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p>The representation type of whose turn it is or if the game is over.</p>
+</div>
+</div>
+
+
+<pre><span id="TYPEt"><span class="keyword">type</span> <code class="type"></code>t</span> = <code class="type"><a href="State.html#TYPEcol">col</a> list * <a href="State.html#TYPEturn">turn</a></code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p>The abstract representation type of a state in the game.</p>
+</div>
+</div>
+
+
+<pre><span id="EXCEPTIONFullCol"><span class="keyword">exception</span> FullCol</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when when a column is full.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONInvalidCol"><span class="keyword">exception</span> InvalidCol</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when an index is not a valid column index.</p>
+</div>
+</div>
+
+<pre><span id="EXCEPTIONInvalidRow"><span class="keyword">exception</span> InvalidRow</span></pre>
+<div class="info ">
+<div class="info-desc">
+<p>Raised when an index is not a valid row index.</p>
+</div>
+</div>
+
+<pre><span id="VALmake_empty_col"><span class="keyword">val</span> make_empty_col</span> : <code class="type">int -> <a href="State.html#TYPEtoken">token</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">make_empty_col r</code> is an Empty token list with <code class="code">r</code> Empty tokens, which 
+    represents one empty column.</p>
+</div>
+</div>
+
+<pre><span id="VALmake_empty_grid"><span class="keyword">val</span> make_empty_grid</span> : <code class="type">int -> int -> <a href="State.html#TYPEtoken">token</a> list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">make_empty_grid r c</code> is an Empty grid with <code class="code">r</code> rows and <code class="code">c</code> columns.</p>
+</div>
+</div>
+
+<pre><span id="VALmake_start_state"><span class="keyword">val</span> make_start_state</span> : <code class="type">int -> int -> <a href="State.html#TYPEtoken">token</a> list list * <a href="State.html#TYPEturn">turn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">make_start_state r c</code> is the State.t with a board of <code class="code">r</code> rows, <code class="code">c</code> columns,
+    and with YellowTurn as the first turn .</p>
+</div>
+</div>
+
+<pre><span id="VALget_col"><span class="keyword">val</span> get_col</span> : <code class="type">int -> 'a list -> 'a</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_col c_i cols</code> is the column at index <code class="code">c_i</code> in <code class="code">cols</code>.
+    Raises: InvalidCol if <code class="code">c_i</code> is not a valid column index.</p>
+</div>
+</div>
+
+<pre><span id="VALget_token_row"><span class="keyword">val</span> get_token_row</span> : <code class="type">int -> 'a list -> 'a</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_token_row r_i col</code> is the token at index <code class="code">r_i</code> in <code class="code">col</code>.
+    Raises: InvalidRow if <code class="code">r_i</code> is not a valid row index.</p>
+</div>
+</div>
+
+<pre><span id="VALget_token"><span class="keyword">val</span> get_token</span> : <code class="type">int -> int -> <a href="State.html#TYPEtoken">token</a> list list * 'a -> <a href="State.html#TYPEtoken">token</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_token c_i r_i t</code> is the token in <code class="code">t</code> at column <code class="code">c_i</code> and row <code class="code">r_i</code>.
+    Raises: InvalidCol if c_i is not a valid column index.
+    Raises: InvalidRow if r_i is not a valid row index.</p>
+</div>
+</div>
+
+<pre><span id="VALget_turn"><span class="keyword">val</span> get_turn</span> : <code class="type">'a * <a href="State.html#TYPEturn">turn</a> -> <a href="State.html#TYPEturn">turn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_turn t</code> is the turn at state <code class="code">t</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALcol_to_list_helper"><span class="keyword">val</span> col_to_list_helper</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list -> <a href="State.html#TYPEcol">col</a> -> <a href="State.html#TYPEtoken">token</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">col_to_list_helper acc col</code> is a token list representation of <code class="code">col</code> but 
+    reversed.</p>
+</div>
+</div>
+
+<pre><span id="VALcol_to_list"><span class="keyword">val</span> col_to_list</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list -> <a href="State.html#TYPEcol">col</a> -> <a href="State.html#TYPEtoken">token</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">col_to_list acc col</code> is a token list representation of <code class="code">col</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALgrid_to_list_helper"><span class="keyword">val</span> grid_to_list_helper</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list list -> <a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">grid_to_list_helper acc grid</code> is a token list list representation of grid
+    but reversed.</p>
+</div>
+</div>
+
+<pre><span id="VALgrid_to_list"><span class="keyword">val</span> grid_to_list</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list list -> <a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">grid_to_list acc grid</code> is a token list list representation of grid.</p>
+</div>
+</div>
+
+<pre><span id="VALget_board"><span class="keyword">val</span> get_board</span> : <code class="type"><a href="State.html#TYPEt">t</a> -> <a href="State.html#TYPEtoken">token</a> list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_board t</code> is the board at state <code class="code">t</code> represented as a list of token 
+    lists.</p>
+</div>
+</div>
+
+<pre><span id="VALconsec4"><span class="keyword">val</span> consec4</span> : <code class="type">'a list -> 'a -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">consec4 tlist token</code> is whether the <code class="code">tlist</code> has four consecutive <code class="code">token</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALvert4"><span class="keyword">val</span> vert4</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">vert4 lst token</code> is whether <code class="code">token</code> satisfies the vertical winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+</div>
+</div>
+
+<pre><span id="VALget_idx"><span class="keyword">val</span> get_idx</span> : <code class="type">'a list -> int -> int -> 'a</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_idx col r_i count</code> gets the desired index of the <code class="code">col</code> by matching 
+    <code class="code">r_i</code> and <code class="code">count</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALhori4"><span class="keyword">val</span> hori4</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">hori4 lst token</code> is whether <code class="code">token</code> satisfies the horizontal winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+</div>
+</div>
+
+<pre><span id="VALsquare4x4"><span class="keyword">val</span> square4x4</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">square4x4 lst token</code> is whether <code class="code">token</code> satisfies the winning 
+    condition in the given <code class="code">lst</code> orientation.</p>
+</div>
+</div>
+
+<pre><span id="VALsquare_larger"><span class="keyword">val</span> square_larger</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> list list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">square larger lst</code> is a helper for diag4. Fails with 
+    "Error : invalid game board", if the <code class="code">lst</code> is empty.</p>
+</div>
+</div>
+
+<pre><span id="VALis_col_full"><span class="keyword">val</span> is_col_full</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">is_col_full col</code> is true if the column <code class="code">col</code> is full. false if not.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_rect"><span class="keyword">val</span> check_rect</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEcol">col</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">check_rect lst</code> is a helper for diag4.</p>
+</div>
+</div>
+
+<pre><span id="VALdiag4"><span class="keyword">val</span> diag4</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">diag4 lst token</code> is whether the player using <code class="code">token</code> in <code class="code">lst</code> has met the 
+    diagonal winning condition.</p>
+</div>
+</div>
+
+<pre><span id="VALcheck_win_condition"><span class="keyword">val</span> check_win_condition</span> : <code class="type"><a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEtoken">token</a> -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">win_condition lst token</code> is true if the current game <code class="code">lst</code> is a win for 
+    one of the two players using <code class="code">token</code> and false otherwise.</p>
+</div>
+</div>
+
+<pre><span id="VALis_col_full"><span class="keyword">val</span> is_col_full</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">is_col_full col</code> is true if the column <code class="code">col</code> is full. false if not.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_in_col"><span class="keyword">val</span> drop_in_col</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list -> <a href="State.html#TYPEtoken">token</a> -> 'a -> <a href="State.html#TYPEcol">col</a> -> <a href="State.html#TYPEcol">col</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_in_col col token c_i acc</code> is <code class="code">col</code> with <code class="code">token</code> dropped into it.</p>
+</div>
+</div>
+
+<pre><span id="VALnew_col"><span class="keyword">val</span> new_col</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> -> int -> <a href="State.html#TYPEtoken">token</a> list list -> <a href="State.html#TYPEtoken">token</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">new_col token c_i grid</code> is the new column at <code class="code">c_i</code> in grid with <code class="code">token</code> 
+    dropped into it.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop_token"><span class="keyword">val</span> drop_token</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> -><br>       int -> <a href="State.html#TYPEcol">col</a> list -> <a href="State.html#TYPEcol">col</a> list -> int -> <a href="State.html#TYPEcol">col</a> list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop_token token c_i grid acc n</code> is the new grid with <code class="code">token</code> dropped at
+    <code class="code">c_i</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALnext_turn"><span class="keyword">val</span> next_turn</span> : <code class="type"><a href="State.html#TYPEturn">turn</a> -> <a href="State.html#TYPEturn">turn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_turn turn</code> is the next turn if the current turn is <code class="code">turn</code>. Fails with 
+    "some winning condition/no new turn game is over." if there is no next turn.</p>
+</div>
+</div>
+
+<pre><span id="VALis_grid_full"><span class="keyword">val</span> is_grid_full</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list list -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">is_grid_full lst</code> is true if the grid represented by <code class="code">lst</code> is full
+    of tokens. Otherwise, false.</p>
+</div>
+</div>
+
+<pre><span id="VALget_winner"><span class="keyword">val</span> get_winner</span> : <code class="type">'a -> <a href="State.html#TYPEtoken">token</a> -> 'a * <a href="State.html#TYPEturn">turn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_winner grid token</code> is the state associated with the proper winning turn
+    based on <code class="code">token</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALdrop"><span class="keyword">val</span> drop</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> -><br>       int -> <a href="State.html#TYPEcol">col</a> list * <a href="State.html#TYPEturn">turn</a> -> <a href="State.html#TYPEcol">col</a> list * <a href="State.html#TYPEturn">turn</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">drop token c_i t</code> is the state after dropping <code class="code">token</code> at <code class="code">col_i</code> 
+    in state <code class="code">t</code>. Fails with "not a valid token" if the winning conditions are 
+    met but <code class="code">token</code> is not a valid token to meet the winning conditions.</p>
+</div>
+</div>
+
+<pre><span id="VALget_possible_moves_helper"><span class="keyword">val</span> get_possible_moves_helper</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list list -> int list -> int -> int list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_possible_moves_helper board acc n</code> is a list of all the possible col_i
+    that a token can legally be dropped into <code class="code">board</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALget_possible_moves"><span class="keyword">val</span> get_possible_moves</span> : <code class="type"><a href="State.html#TYPEtoken">token</a> list list * 'a -> int list</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_possible_moves t</code> is a list of all the possible col_i that a token
+    can legally be dropped into in <code class="code">t</code>.</p>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Human.html">
+<link rel="next" href="MinMax.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Input</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Human.html" title="Human">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="MinMax.html" title="MinMax">Next</a>
+</div>
+<h1>Module <a href="type_Input.html">Input</a></h1>
+
+<pre><span id="MODULEInput"><span class="keyword">module</span> Input</span>: <code class="code">sig</code> <a href="Input.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">click_region</code> is a region associated with a callback
+    when clicked</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEclick_region"><span class="keyword">type</span> <code class="type"></code>click_region</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTclick_region.region">region</span>&nbsp;: <code class="type"><a href="Window.html#TYPEregion">Window.region</a></code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTclick_region.callback">callback</span>&nbsp;: <code class="type">unit -> unit</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="TYPEclick_collection"><span class="keyword">type</span> <code class="type"></code>click_collection</span> = <code class="type"><a href="Input.html#TYPEclick_region">click_region</a> list</code> </pre>
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">click_collection</code> is a collection of <code class="code">click_regions</code></p>
+</div>
+</div>
+
+
+<pre><span id="VALrun_callbacks"><span class="keyword">val</span> run_callbacks</span> : <code class="type"><a href="Input.html#TYPEclick_region">click_region</a> list -> (unit -> unit) -> float * float -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">run_callbacks cc pt</code> runs the first callback of 
+    <code class="code">cc</code> that the relative point <code class="code">pt</code> lies in 
+    and runs <code class="code">f ()</code> if <code class="code">pt</code> doesn't lie in any region in <code class="code">cc</code></p>
+</div>
+</div>
+
+<pre><span id="VALwait_until_up"><span class="keyword">val</span> wait_until_up</span> : <code class="type">unit -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">wait_until_up</code> waits until the user releases
+    the mouse button</p>
+</div>
+</div>
+
+<pre><span id="VALclick_or_quit"><span class="keyword">val</span> click_or_quit</span> : <code class="type">Graphics.status -> (unit -> unit) -> (Graphics.status -> unit) -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">click_or_quit status func loop </code> quits if the user hits escape,
+    runs <code class="code">func status</code> if the user has clicked and released their mouse 
+    and runs <code class="code">loop ()</code> otherwise</p>
+</div>
+</div>
+</body></html>

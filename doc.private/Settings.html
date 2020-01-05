@@ -1,0 +1,544 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Screen.html">
+<link rel="next" href="Utils.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Settings</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Screen.html" title="Screen">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Utils.html" title="Utils">Next</a>
+</div>
+<h1>Module <a href="type_Settings.html">Settings</a></h1>
+
+<pre><span id="MODULESettings"><span class="keyword">module</span> Settings</span>: <code class="code">sig</code> <a href="Settings.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">color</code> are the different colors pieces and
+    the background can be colored</p>
+
+<p><code class="code">selection</code> is either the yellow pieces,
+    the red pieces, or the background for color changing.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEcolor"><span class="keyword">type</span> <code class="type"></code>color</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Black"><span class="constructor">Black</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.White"><span class="constructor">White</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Red"><span class="constructor">Red</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Green"><span class="constructor">Green</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Blue"><span class="constructor">Blue</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Yellow"><span class="constructor">Yellow</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Cyan"><span class="constructor">Cyan</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTcolor.Magenta"><span class="constructor">Magenta</span></span></code></td>
+
+</tr></table>
+
+
+
+<pre><span id="VALyellow_color"><span class="keyword">val</span> yellow_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">yellow_color</code> is a reference to the color of the
+    yellow pieces.
+    (This sounds dumb, but it makes sense when you consider
+    that the State module defines pieces based on Yellow/Red)</p>
+</div>
+</div>
+
+<pre><span id="VALred_color"><span class="keyword">val</span> red_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">red_color</code> is a reference to the color of the
+    red pieces.
+    (This sounds dumb, but it makes sense when you consider
+    that the State module defines pieces based on Yellow/Red)</p>
+</div>
+</div>
+
+<pre><span id="VALbackground_color"><span class="keyword">val</span> background_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">background_color</code> is a reference to the color of the
+    background</p>
+</div>
+</div>
+
+<pre><span id="VALnext_color"><span class="keyword">val</span> next_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> -> <a href="Settings.html#TYPEcolor">color</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_color color</code> is the next color in the sequence of colors</p>
+</div>
+</div>
+
+<pre><span id="VALprev_color"><span class="keyword">val</span> prev_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> -> <a href="Settings.html#TYPEcolor">color</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">prev_color color</code> is the previous color in the sequence of colors</p>
+</div>
+</div>
+
+<pre><span id="VALto_color"><span class="keyword">val</span> to_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">to_color color</code> is the <code class="code">Graphics</code> color of <code class="code">color</code></p>
+</div>
+</div>
+
+<pre><span id="VALto_alt_color"><span class="keyword">val</span> to_alt_color</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">to_alt_color color</code> is the <code class="code">Graphics</code> color of <code class="code">color</code>,
+    except slightly differently colored.</p>
+</div>
+</div>
+
+<pre><span id="VALchange_setting"><span class="keyword">val</span> change_setting</span> : <code class="type">('a -> 'a) -> 'a Stdlib.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">change_setting f s</code> applies <code class="code">f</code> to setting <code class="code">s</code></p>
+</div>
+</div>
+
+<pre><span id="VALset_setting"><span class="keyword">val</span> set_setting</span> : <code class="type">'a -> 'a Stdlib.ref -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">change_setting c s</code> sets setting <code class="code">s</code> to value <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><code><span id="TYPEstyle"><span class="keyword">type</span> <code class="type"></code>style</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.Circle"><span class="constructor">Circle</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.CircleDeep"><span class="constructor">CircleDeep</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.CircleFlat"><span class="constructor">CircleFlat</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.TriangleUp"><span class="constructor">TriangleUp</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.TriangleDown"><span class="constructor">TriangleDown</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.FourX"><span class="constructor">FourX</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.FourPlus"><span class="constructor">FourPlus</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.FiveX"><span class="constructor">FiveX</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.FivePlus"><span class="constructor">FivePlus</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.SixHexFlat"><span class="constructor">SixHexFlat</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.SixHexPointy"><span class="constructor">SixHexPointy</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.SevenHexFlat"><span class="constructor">SevenHexFlat</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.SevenHexPointy"><span class="constructor">SevenHexPointy</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTstyle.Smile"><span class="constructor">Smile</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">style</code> is a piece style</p>
+</div>
+</div>
+
+
+<pre><span id="VALnext_style"><span class="keyword">val</span> next_style</span> : <code class="type"><a href="Settings.html#TYPEstyle">style</a> -> <a href="Settings.html#TYPEstyle">style</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">next_style sty</code> is the next style in the sequence
+    of styles</p>
+</div>
+</div>
+
+<pre><span id="VALprev_style"><span class="keyword">val</span> prev_style</span> : <code class="type"><a href="Settings.html#TYPEstyle">style</a> -> <a href="Settings.html#TYPEstyle">style</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">prev_style sty</code> is the previous style in the sequence
+    of styles</p>
+</div>
+</div>
+
+<pre><span id="VALyellow_style"><span class="keyword">val</span> yellow_style</span> : <code class="type"><a href="Settings.html#TYPEstyle">style</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">yellow_style</code> is a reference to the style of yellow pieces</p>
+</div>
+</div>
+
+<pre><span id="VALred_style"><span class="keyword">val</span> red_style</span> : <code class="type"><a href="Settings.html#TYPEstyle">style</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">red_style</code> is a reference to the style of red pieces</p>
+</div>
+</div>
+
+<pre><span id="VALto_desc"><span class="keyword">val</span> to_desc</span> : <code class="type"><a href="Settings.html#TYPEstyle">style</a> -> string</code></pre>
+<pre><span id="VALcirc"><span class="keyword">val</span> circ</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -><br>       <a href="Settings.html#TYPEcolor">color</a> -> ?offset:float * float -> ?alt:bool -> float -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">circ ~offset:(x_off, y_off) ~alt:alter factor r c</code> is a circle
+    at <code class="code">(r.x, r.y)</code> offset by <code class="code">(x_off, y_off)</code> relative to 40% of the region's
+    width and height. The size of the circle is scaled by <code class="code">factor</code>. 
+    The circle has an alternative color to <code class="code">c</code> if <code class="code">alt</code> is true.</p>
+</div>
+</div>
+
+<pre><span id="VALborder"><span class="keyword">val</span> border</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">border r c</code> is the border for each piece style</p>
+</div>
+</div>
+
+<pre><span id="VALcircle_deep"><span class="keyword">val</span> circle_deep</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">circle_deep r c</code> is a circle with the deep circle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALcircle_flat"><span class="keyword">val</span> circle_flat</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">circle_flat r c</code> is a circle with the flat circle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALtriangle_up"><span class="keyword">val</span> triangle_up</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">triangle_up r c</code> is a circle with the upwards triangle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALtriangle_down"><span class="keyword">val</span> triangle_down</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">triangle_down r c</code> is a circle with the downwards triangle style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALfour_x"><span class="keyword">val</span> four_x</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">four_x r c</code> is a circle with the 4 circle X style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALfour_plus"><span class="keyword">val</span> four_plus</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">four_plus r c</code> is a circle with the 4 circle plus style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALfive_x"><span class="keyword">val</span> five_x</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">five_x r c</code> is a circle with the 5 circle X style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALfive_plus"><span class="keyword">val</span> five_plus</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">five_plus r c</code> is a circle with the 5 circle plus style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALsix_flat"><span class="keyword">val</span> six_flat</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">six_flat r c</code> is a circle with the 6 circle flat hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALsix_pointy"><span class="keyword">val</span> six_pointy</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">six_pointy r c</code> is a circle with the 6 circle pointy hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALseven_flat"><span class="keyword">val</span> seven_flat</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">seven_flat r c</code> is a circle with the 7 circle flat hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALseven_pointy"><span class="keyword">val</span> seven_pointy</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">seven_pointy r c</code> is a circle with the 7 circle pointy hexagon style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALsmile"><span class="keyword">val</span> smile</span> : <code class="type"><a href="Window.html#TYPEregion">Window.region</a> -> <a href="Settings.html#TYPEcolor">color</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">smile r c</code> is a circle with the smile style 
+    at <code class="code">r</code> with color <code class="code">c</code></p>
+</div>
+</div>
+
+<pre><span id="VALto_shape"><span class="keyword">val</span> to_shape</span> : <code class="type"><a href="Settings.html#TYPEcolor">color</a> -> <a href="Settings.html#TYPEstyle">style</a> -> <a href="Window.html#TYPEregion">Window.region</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">to_shape c sty r</code> is a shape with color <code class="code">c</code>, style <code class="code">sty</code>,
+    occupying region <code class="code">r</code></p>
+</div>
+</div>
+
+<pre><code><span id="TYPEselection"><span class="keyword">type</span> <code class="type"></code>selection</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.YellowSelection"><span class="constructor">YellowSelection</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.RedSelection"><span class="constructor">RedSelection</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.Background"><span class="constructor">Background</span></span></code></td>
+
+</tr></table>
+
+
+
+<pre><span id="VALto_ref"><span class="keyword">val</span> to_ref</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> <a href="Settings.html#TYPEcolor">color</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">to_ref sel</code> is the reference <code class="code">sel</code> corresponds to</p>
+</div>
+</div>
+
+<pre><span id="VALadvance_color"><span class="keyword">val</span> advance_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">advance_color sel</code> advances the color of the selection
+    to the next color.</p>
+</div>
+</div>
+
+<pre><span id="VALdevance_color"><span class="keyword">val</span> devance_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">devance_color sel</code> retreats the color of the selection
+    to the previous color.</p>
+</div>
+</div>
+
+<pre><span id="VALreset_color"><span class="keyword">val</span> reset_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reset_color sel</code> resets the color of the selection.
+    red for red pieces;
+    yellow for yellow pieces;
+    blue for the background</p>
+</div>
+</div>
+
+<pre><span id="VALget_color"><span class="keyword">val</span> get_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_color sel</code> gets the <code class="code">Graphics</code> color of the selection</p>
+</div>
+</div>
+
+<pre><span id="VALget_alt_color"><span class="keyword">val</span> get_alt_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_alt_color sel</code> gets the alternative 
+    <code class="code">Graphics</code> color of the selection</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEpiece"><span class="keyword">type</span> <code class="type"></code>piece</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTpiece.YellowPiece"><span class="constructor">YellowPiece</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTpiece.RedPiece"><span class="constructor">RedPiece</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">piece</code> is a choice of the red or yellow pieces</p>
+</div>
+</div>
+
+
+<pre><span id="VALto_ref'"><span class="keyword">val</span> to_ref'</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> <a href="Settings.html#TYPEstyle">style</a> Stdlib.ref</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">to_ref' pi</code> is the reference corresponding to piece <code class="code">pi</code></p>
+</div>
+</div>
+
+<pre><span id="VALadvance_style"><span class="keyword">val</span> advance_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">advance_style pi</code> advances the style of <code class="code">pi</code> to the
+    next style</p>
+</div>
+</div>
+
+<pre><span id="VALdevance_style"><span class="keyword">val</span> devance_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">devance_color sel</code> retreats the style of <code class="code">pi</code>
+    to the previous style</p>
+</div>
+</div>
+
+<pre><span id="VALreset_style"><span class="keyword">val</span> reset_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reset_style pi</code> resets the style of <code class="code">pi</code> to CIRCLE</p>
+</div>
+</div>
+
+<pre><span id="VALget_shape"><span class="keyword">val</span> get_shape</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> <a href="Window.html#TYPEregion">Window.region</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_shape pi r</code> is the <code class="code">Screen</code> shape corresponding to
+    <code class="code">pi</code>, with the style and color of <code class="code">pi</code>, within <code class="code">r</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_desc"><span class="keyword">val</span> get_desc</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_desc pi</code> is a description of the style of <code class="code">pi</code></p>
+</div>
+</div>
+</body></html>

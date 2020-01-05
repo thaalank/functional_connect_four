@@ -1,0 +1,160 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Screen.html">
+<link rel="next" href="Utils.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Settings</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Screen.html" title="Screen">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Utils.html" title="Utils">Next</a>
+</div>
+<h1>Module <a href="type_Settings.html">Settings</a></h1>
+
+<pre><span id="MODULESettings"><span class="keyword">module</span> Settings</span>: <code class="code">sig</code> <a href="Settings.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">selection</code> is either the yellow pieces,
+    the red pieces, or the background for color changing.</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEselection"><span class="keyword">type</span> <code class="type"></code>selection</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.YellowSelection"><span class="constructor">YellowSelection</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.RedSelection"><span class="constructor">RedSelection</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTselection.Background"><span class="constructor">Background</span></span></code></td>
+
+</tr></table>
+
+
+
+<pre><span id="VALadvance_color"><span class="keyword">val</span> advance_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">advance_color sel</code> advances the color of the selection
+    to the next color.</p>
+</div>
+</div>
+
+<pre><span id="VALdevance_color"><span class="keyword">val</span> devance_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">devance_color sel</code> retreats the color of the selection
+    to the previous color.</p>
+</div>
+</div>
+
+<pre><span id="VALreset_color"><span class="keyword">val</span> reset_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reset_color sel</code> resets the color of the selection.
+    red for red pieces;
+    yellow for yellow pieces;
+    blue for the background</p>
+</div>
+</div>
+
+<pre><span id="VALget_color"><span class="keyword">val</span> get_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_color sel</code> gets the <code class="code">Graphics</code> color of the selection</p>
+</div>
+</div>
+
+<pre><span id="VALget_alt_color"><span class="keyword">val</span> get_alt_color</span> : <code class="type"><a href="Settings.html#TYPEselection">selection</a> -> Graphics.color</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_alt_color sel</code> gets the alternative 
+    <code class="code">Graphics</code> color of the selection</p>
+</div>
+</div>
+
+<pre><code><span id="TYPEpiece"><span class="keyword">type</span> <code class="type"></code>piece</span> = </code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTpiece.YellowPiece"><span class="constructor">YellowPiece</span></span></code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code><span class="keyword">|</span></code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTpiece.RedPiece"><span class="constructor">RedPiece</span></span></code></td>
+
+</tr></table>
+
+<div class="info ">
+<div class="info-desc">
+<p><code class="code">piece</code> is a choice of the red or yellow pieces</p>
+</div>
+</div>
+
+
+<pre><span id="VALadvance_style"><span class="keyword">val</span> advance_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">advance_style pi</code> advances the style of <code class="code">pi</code> to the
+    next style</p>
+</div>
+</div>
+
+<pre><span id="VALdevance_style"><span class="keyword">val</span> devance_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">devance_color sel</code> retreats the style of <code class="code">pi</code>
+    to the previous style</p>
+</div>
+</div>
+
+<pre><span id="VALreset_style"><span class="keyword">val</span> reset_style</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">reset_style pi</code> resets the style of <code class="code">pi</code> to CIRCLE</p>
+</div>
+</div>
+
+<pre><span id="VALget_shape"><span class="keyword">val</span> get_shape</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> <a href="Window.html#TYPEregion">Window.region</a> -> <a href="Screen.html#TYPEshape">Screen.shape</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_shape pi r</code> is the <code class="code">Screen</code> shape corresponding to
+    <code class="code">pi</code>, with the style and color of <code class="code">pi</code>, within <code class="code">r</code></p>
+</div>
+</div>
+
+<pre><span id="VALget_desc"><span class="keyword">val</span> get_desc</span> : <code class="type"><a href="Settings.html#TYPEpiece">piece</a> -> string</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">get_desc pi</code> is a description of the style of <code class="code">pi</code></p>
+</div>
+</div>
+</body></html>

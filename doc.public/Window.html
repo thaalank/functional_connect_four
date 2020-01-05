@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Utils.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Index of module types" rel=Appendix href="index_module_types.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="Play" rel="Chapter" href="Play.html">
+<link title="Authors" rel="Chapter" href="Authors.html">
+<link title="Draw" rel="Chapter" href="Draw.html">
+<link title="Human" rel="Chapter" href="Human.html">
+<link title="Input" rel="Chapter" href="Input.html">
+<link title="MinMax" rel="Chapter" href="MinMax.html">
+<link title="Player" rel="Chapter" href="Player.html">
+<link title="Screen" rel="Chapter" href="Screen.html">
+<link title="Settings" rel="Chapter" href="Settings.html">
+<link title="Utils" rel="Chapter" href="Utils.html">
+<link title="Window" rel="Chapter" href="Window.html"><title>Window</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Utils.html" title="Utils">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;</div>
+<h1>Module <a href="type_Window.html">Window</a></h1>
+
+<pre><span id="MODULEWindow"><span class="keyword">module</span> Window</span>: <code class="code">sig</code> <a href="Window.html">..</a> <code class="code">end</code></pre><div class="info module top">
+<div class="info-desc">
+<p><code class="code">region</code> is a region of the screen, and can be offscreen.
+    <code class="code">width</code> is its width as a fraction of the screen's width
+    <code class="code">height</code> is its height as a fraction of the screen's height
+    <code class="code">x</code> is the position of the center of the region along the x axis
+    as a fraction of the screen's width
+    <code class="code">y</code> is the position of the center of the region along the y axis
+    as a fraction of the screen's width
+    Representation Invariant: 
+    <code class="code">width</code> and <code class="code">height</code> are both &gt;= 0</p>
+</div>
+</div>
+<hr width="100%">
+
+<pre><code><span id="TYPEregion"><span class="keyword">type</span> <code class="type"></code>region</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTregion.width">width</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTregion.height">height</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTregion.x">x</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTregion.y">y</span>&nbsp;: <code class="type">float</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="VALwindow_dim"><span class="keyword">val</span> window_dim</span> : <code class="type">unit -> float * float</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">window_dim ()</code> are the dimensions of the window <code class="code">(width, height)</code></p>
+</div>
+</div>
+
+<pre><span id="VALwithin"><span class="keyword">val</span> within</span> : <code class="type"><a href="Window.html#TYPEregion">region</a> -> float * float -> bool</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">within region (x,y)</code> is whether the relative location <code class="code">(x,y)</code> 
+    is in or on the border of <code class="code">region</code></p>
+</div>
+</div>
+
+<pre><span id="VALrelativize"><span class="keyword">val</span> relativize</span> : <code class="type">int * int -> float * float</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">relativize (x,y)</code> is the corresponding relative point
+    corresponding to <code class="code">(x,y)</code>, relative to the current window</p>
+</div>
+</div>
+</body></html>

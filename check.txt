@@ -1,0 +1,5 @@
+This is a visual inspection test to determine if your computer cannot run this game properly.
+After this test is executed, a window should appear with a blue rectange near the center of it.
+Clicking inside this window should close it.
+So should focusing the window (by clicking the top bar) and then pressing any key.
+If any of this does not occur, your computer cannot run the game.
