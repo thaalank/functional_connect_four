@@ -12,3 +12,8 @@
 generated with [this website](https://www.kammerl.de/ascii/AsciiSignature.php), font "stop", with some minor modification.
 
 red_win.txt, yellow_win.txt, and draw.txt generated with [this website](http://patorjk.com/software/taag), font "georgi16", with some modification.
+
+Authors:
+@author Thaalank Ranjan tr329
+@author Hogun Lee hl928 
+@author Andrew Yan aky26

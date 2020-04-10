@@ -1,100 +1,100 @@
 ### Starting build.
 # Target: play.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:play.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules play.mli > play.mli.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules play.mli > play.mli.depends # cached
 # Target: play.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:play.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o play.cmi play.mli
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o play.cmi play.mli # cached
 # Target: play.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:play.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules play.ml > play.ml.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules play.ml > play.ml.depends # cached
 # Target: board_draw.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:board_draw.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules board_draw.ml > board_draw.ml.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules board_draw.ml > board_draw.ml.depends # cached
 # Target: screen.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:screen.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules screen.mli > screen.mli.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules screen.mli > screen.mli.depends # cached
 # Target: draw.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:draw.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules draw.mli > draw.mli.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules draw.mli > draw.mli.depends # cached
 # Target: window.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:window.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules window.mli > window.mli.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules window.mli > window.mli.depends # cached
 # Target: window.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:window.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o window.cmi window.mli
-# Target: input.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:input.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules input.mli > input.mli.depends
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o window.cmi window.mli # cached
 # Target: draw.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:draw.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o draw.cmi draw.mli
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o draw.cmi draw.mli # cached
+# Target: input.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:input.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules input.mli > input.mli.depends # cached
 # Target: input.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:input.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o input.cmi input.mli
-# Target: settings.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:settings.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules settings.mli > settings.mli.depends
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o input.cmi input.mli # cached
 # Target: screen.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:screen.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o screen.cmi screen.mli
-# Target: state.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:state.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules state.mli > state.mli.depends
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o screen.cmi screen.mli # cached
+# Target: settings.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:settings.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules settings.mli > settings.mli.depends # cached
 # Target: settings.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:settings.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o settings.cmi settings.mli
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o settings.cmi settings.mli # cached
+# Target: state.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:state.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules state.mli > state.mli.depends # cached
 # Target: state.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:state.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o state.cmi state.mli
-# Target: computer.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:computer.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules computer.ml > computer.ml.depends
-# Target: minMax.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:minMax.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules minMax.mli > minMax.mli.depends
-# Target: player.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:player.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules player.mli > player.mli.depends
-# Target: minMax.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:minMax.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o minMax.cmi minMax.mli
-# Target: player.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:player.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o player.cmi player.mli
-# Target: human.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:human.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules human.mli > human.mli.depends
-# Target: utils.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:utils.mli, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules utils.mli > utils.mli.depends
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o state.cmi state.mli # cached
 # Target: board_draw.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:board_draw.cmo, file:board_draw.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o board_draw.cmo board_draw.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o board_draw.cmo board_draw.ml # cached
+# Target: computer.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:computer.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules computer.ml > computer.ml.depends # cached
+# Target: minMax.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:minMax.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules minMax.mli > minMax.mli.depends # cached
+# Target: minMax.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:minMax.mli, interf, ocaml, quiet, thread, traverse }
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o minMax.cmi minMax.mli # cached
+# Target: player.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:player.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules player.mli > player.mli.depends # cached
+# Target: player.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:player.mli, interf, ocaml, quiet, thread, traverse }
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o player.cmi player.mli # cached
 # Target: computer.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:computer.cmo, file:computer.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o computer.cmo computer.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o computer.cmo computer.ml # cached
+# Target: human.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:human.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules human.mli > human.mli.depends # cached
 # Target: human.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:human.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o human.cmi human.mli
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o human.cmi human.mli # cached
+# Target: utils.mli.depends, tags: { package(graphics), package(oUnit), extension:mli, file:utils.mli, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules utils.mli > utils.mli.depends # cached
 # Target: utils.cmi, tags: { package(graphics), package(oUnit), byte, compile, extension:mli, file:utils.mli, interf, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o utils.cmi utils.mli
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o utils.cmi utils.mli # cached
 # Target: play.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:play.cmo, file:play.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o play.cmo play.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o play.cmo play.ml # cached
 # Target: draw.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:draw.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules draw.ml > draw.ml.depends
-# Target: human.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:human.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules human.ml > human.ml.depends
-# Target: input.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:input.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules input.ml > input.ml.depends
-# Target: screen.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:screen.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules screen.ml > screen.ml.depends
-# Target: settings.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:settings.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules settings.ml > settings.ml.depends
-# Target: state.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:state.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules state.ml > state.ml.depends
-# Target: utils.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:utils.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules utils.ml > utils.ml.depends
-# Target: window.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:window.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules window.ml > window.ml.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules draw.ml > draw.ml.depends # cached
 # Target: draw.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:draw.cmo, file:draw.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o draw.cmo draw.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o draw.cmo draw.ml # cached
+# Target: human.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:human.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules human.ml > human.ml.depends # cached
 # Target: human.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:human.cmo, file:human.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o human.cmo human.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o human.cmo human.ml # cached
+# Target: input.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:input.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules input.ml > input.ml.depends # cached
 # Target: input.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:input.cmo, file:input.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o input.cmo input.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o input.cmo input.ml # cached
+# Target: screen.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:screen.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules screen.ml > screen.ml.depends # cached
 # Target: screen.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:screen.cmo, file:screen.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o screen.cmo screen.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o screen.cmo screen.ml # cached
+# Target: settings.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:settings.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules settings.ml > settings.ml.depends # cached
 # Target: settings.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:settings.cmo, file:settings.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o settings.cmo settings.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o settings.cmo settings.ml # cached
+# Target: state.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:state.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules state.ml > state.ml.depends # cached
 # Target: state.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:state.cmo, file:state.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o state.cmo state.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o state.cmo state.ml # cached
+# Target: utils.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:utils.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules utils.ml > utils.ml.depends # cached
 # Target: utils.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:utils.cmo, file:utils.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o utils.cmo utils.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o utils.cmo utils.ml # cached
+# Target: window.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:window.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules window.ml > window.ml.depends # cached
 # Target: window.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:window.cmo, file:window.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o window.cmo window.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o window.cmo window.ml # cached
 # Target: minMax.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:minMax.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules minMax.ml > minMax.ml.depends
-# Target: player.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:player.ml, ocaml, ocamldep, quiet, thread, traverse }
-ocamlfind ocamldep -package oUnit -package graphics -modules player.ml > player.ml.depends
+ocamlfind ocamldep -package oUnit -package graphics -modules minMax.ml > minMax.ml.depends # cached
 # Target: minMax.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:minMax.cmo, file:minMax.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o minMax.cmo minMax.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o minMax.cmo minMax.ml # cached
+# Target: player.ml.depends, tags: { package(graphics), package(oUnit), extension:ml, file:player.ml, ocaml, ocamldep, quiet, thread, traverse }
+ocamlfind ocamldep -package oUnit -package graphics -modules player.ml > player.ml.depends # cached
 # Target: player.cmo, tags: { package(graphics), package(oUnit), byte, compile, extension:cmo, extension:ml, file:player.cmo, file:player.ml, implem, ocaml, quiet, thread, traverse }
-ocamlfind ocamlc -c -thread -package oUnit -package graphics -o player.cmo player.ml
+ocamlfind ocamlc -c -thread -package oUnit -package graphics -o player.cmo player.ml # cached
 # Target: play.byte, tags: { package(graphics), package(oUnit), byte, dont_link_with, extension:byte, file:play.byte, link, ocaml, program, quiet, thread, traverse }
 ocamlfind ocamlc -linkpkg -thread -package oUnit -package graphics window.cmo draw.cmo input.cmo screen.cmo settings.cmo state.cmo board_draw.cmo minMax.cmo player.cmo computer.cmo human.cmo utils.cmo play.cmo -o play.byte # cached
 # Compilation successful.
